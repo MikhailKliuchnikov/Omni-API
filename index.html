@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Omni-API</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Omni-API</h1>
+        <div class="about">
+            <h2>About Omni-API</h2>
+            <p>Omni-API is a project with a few features in-build for fun and study purposes.</p>
+        </div>
+        <button id="nav-button">Navigate</button>
+
+        <section id="sidebar-menu" hidden> 
+            <h2>Features (Click on one to start)</h2>
+            <ul>
+                <li>Feature 1: Weather fetching</li>
+                <li>Feature 2: Talking to AI agents</li>
+                <li>Feature 3: Random newest news (around the world)</li>
+                <li>Feature 4: Cool facts generator</li>
+            </ul>
+        </section>
+    </header>
+
+    <main id="main-section">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Omni-API. All rights reserved.</p>
+    </footer>
+
+    <template id="welcome-template">
+        <section>
+            <h2>Welcome to Omni-API</h2>
+            <p>Select a feature from the list above to get started.</p>
+        </section>
+    </template>
+
+    <template id="weather-template">
+        <section>
+            <h2>Weather Fetching</h2>
+            <p>Get the current weather for any city.</p>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="fetch-weather-btn">Fetch Weather</button>
+            <div id="weather-result"></div>
+        </section>
+    </template>
+
+    <template id="ai-agent-template">
+        <section>
+            <h2>AI Agent Interaction</h2>
+            <p>Talk to an AI agent.</p>
+            <input type="text" id="ai-input" placeholder="Ask me anything">
+            <button id="ask-ai-btn">Ask AI</button>
+            <div id="ai-response"></div>
+        </section>
+    </template>
+
+    <template id="news-template">
+        <section>
+            <h2>Random News</h2>
+            <p>Get the latest news from around the world.</p>
+            <button id="get-news-btn">Get News</button>
+            <div id="news-result"></div>
+        </section>
+    </template>
+
+    <template id="cool-facts-template">
+        <section>
+            <h2>Cool Facts Generator</h2>
+            <p>Generate a cool fact.</p>
+            <button id="get-fact-btn">Get Cool Fact</button>
+            <div id="fact-result"></div>
+        </section>
+    </template>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
